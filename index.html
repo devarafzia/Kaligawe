@@ -577,8 +577,7 @@ const geoJSONData = {
         var color = rwColors[rwName];
         var item = document.createElement('label');
         item.className = 'legend-item';
-        var popText = rwName === 'Kawasan Industri' ? '' : ' (' + populasiRW[rwName].toLocaleString('id-ID') + ' jiwa)';
-        item.innerHTML = '<div class="color-box" style="background: ' + color + '; opacity: 0.5; border: 2px solid ' + color + ';"></div>' + rwName + popText;
+        item.innerHTML = '<div class="color-box" style="background: ' + color + '; opacity: 0.5; border: 2px solid ' + color + ';"></div>' + rwName;
         legendContainer.appendChild(item);
       });
     }
